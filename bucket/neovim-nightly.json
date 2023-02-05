@@ -1,0 +1,37 @@
+{
+    "version": "0.9.0-dev-869",
+    "description": "Vim fork focused on extensibility and usability",
+    "homepage": "https://neovim.io",
+    "license": {
+        "identifier": "Apache-2.0,Vim",
+        "url": "https://github.com/neovim/neovim/blob/master/LICENSE"
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip",
+            "hash": "5ab2df211adbcd3924fc1454b08b2526a02779d2f250fc3a9354bd0f1790d008"
+        }
+    },
+    "extract_dir": "nvim-win64",
+    "bin": [
+        "bin\\nvim.exe",
+        "bin\\nvim-qt.exe"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/neovim/neovim/releases",
+        "regex": "NVIM v([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip",
+                "hash": {
+                    "url": "$url.sha256sum"
+                }
+            }
+        }
+    }
+}
