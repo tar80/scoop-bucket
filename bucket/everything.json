@@ -13,7 +13,12 @@
             "hash": "febbdf9ffefd122e046163d23b3ce995b35bbee05964886d1db8c81b7fb5c34f"
         }
     },
-    "persist": "dw.ini, Everything.ini, Everything-ETP.ini, Filters.csv",
+    "persist": [
+        "dw.ini",
+        "Everything.ini",
+        "Everything-ETP.ini",
+        "Filters.csv"
+    ],
     "pre_install": [
         "ensure \"$persist_dir\" | Out-Null",
         "if (!(Test-Path \"$persist_dir\\Everything.ini\")) { Invoke-ExternalCommand \"$dir\\Everything.exe\" -Args @('-install-config null') | Out-Null }",
