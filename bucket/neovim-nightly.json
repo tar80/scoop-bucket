@@ -18,7 +18,6 @@
     "extract_dir": "nvim-win64",
     "bin": [
         "bin\\nvim.exe",
-        "bin\\nvim-qt.exe"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/neovim/neovim/releases",
