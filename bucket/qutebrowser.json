@@ -23,12 +23,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone-amd64.zip",
-                "extract_dir": "qutebrowser-$version-x64"
-            },
-            "32bit": {
-                "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone-win32.zip",
-                "extract_dir": "qutebrowser-$version-x86"
+                "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v$version/qutebrowser-$version-windows-standalone.zip",
+                "extract_dir": "qutebrowser-$version"
             }
         }
     },
