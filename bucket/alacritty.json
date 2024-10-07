@@ -29,5 +29,5 @@
 	"autoupdate": {
 		"url": "https://github.com/alacritty/alacritty/releases/download/v$version/Alacritty-v$version-portable.exe#/alacritty.exe"
 	},
-    "_comment": "This manifest derives from https://github.com/lukesampson/scoop-extras"
+    "_comment": "This manifest derives from https://github.com/ScoopInstaller/Extras"
 }
