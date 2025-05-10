@@ -14,7 +14,7 @@
         }
     },
     "persist": [
-        "dw.ini",
+        "PPxDW.ini",
         "Everything.ini",
         "Everything-ETP.ini",
         "Filters.csv"
