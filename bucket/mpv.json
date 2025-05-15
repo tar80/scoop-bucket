@@ -18,6 +18,12 @@
         }
     },
     "env_add_path": ".",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "Mpv"
+        ]
+    ],
     "checkver": {
         "sourceforge": "mpv-player-windows/release",
         "regex": "mpv-([\\d.]+)-"

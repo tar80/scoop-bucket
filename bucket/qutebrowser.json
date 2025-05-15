@@ -16,6 +16,12 @@
         }
     },
     "bin": "qutebrowser.exe",
+    "shortcuts": [
+        [
+            "qutebrowser.exe",
+            "Qutebrowser"
+        ]
+    ],
     "persist": "config",
     "checkver": {
         "github": "https://github.com/qutebrowser/qutebrowser"
