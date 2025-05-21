@@ -11,14 +11,6 @@
         "ini",
         "SusiePlugin"
     ],
-    "pre_install": [
-        "ensure \"$persist_dir\" | Out-Null",
-        "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
-        "    if (Test-Path $_.FullName) {",
-        "        New-Item -Path (Join-Path \"$dir\" \"$_.Name\") -Value $_.FullName -ItemType HardLink -Force",
-        "    }",
-        "}"
-    ],
     "checkver": {
         "url": "http://www.vector.co.jp/soft/dl/winnt/art/se487522.html",
         "regex": "<span class=\"version\">([^<]+)</span>"

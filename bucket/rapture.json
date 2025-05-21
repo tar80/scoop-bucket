@@ -6,14 +6,11 @@
     "url": "https://ftp.vector.co.jp/73/25/1860/rapture-2.4.1.zip",
     "hash": "229fd56c8f6ba260de8767f40776a50100b684875689d15ba6d7a99231218fad",
     "bin": "rapture.exe",
-    "persist": [
-        "rapture.ini"
-    ],
-    "pre_install": [
+    "post_install": [
         "ensure \"$persist_dir\" | Out-Null",
         "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
         "    if (Test-Path $_.FullName) {",
-        "        New-Item -Path (Join-Path \"$dir\" \"$_.Name\") -Value $_.FullName -ItemType HardLink -Force",
+        "        New-Item -Path (Join-Path $dir $_.Name) -Value $_ -ItemType HardLink -Force",
         "    }",
         "}"
     ],

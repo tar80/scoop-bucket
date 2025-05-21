@@ -1,8 +1,8 @@
 {
-    "homepage": "https://rclone.org",
-    "description": "Sync files and directories to and from multiple cloud / FTP / HTTP hosters.",
-    "license": "MIT",
     "version": "1.69.2",
+    "description": "Sync files and directories to and from multiple cloud / FTP / HTTP hosters.",
+    "homepage": "https://rclone.org",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/rclone/rclone/releases/download/v1.69.2/rclone-v1.69.2-windows-amd64.zip",
@@ -20,19 +20,18 @@
             "extract_dir": "rclone-v1.69.2-windows-arm64"
         }
     },
-    "pre_install": [
-        "ensure \"$persist_dir\" | Out-Null",
-        "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
-        "    if (Test-Path $_.FullName) {",
-        "        New-Item -Path (Join-Path \"$dir\" \"$_.Name\") -Value $_.FullName -ItemType HardLink -Force",
-        "    }",
-        "}"
-    ],
     "uninstaller": {
         "script": "if ((Test-Path \"$dir\\rclone.conf\") -and !(Get-Item \"$dir\\rclone.conf\").LinkType -and (Test-Path $persist_dir)) { Copy-Item \"$dir\\rclone.conf\" $persist_dir }"
     },
     "bin": "rclone.exe",
-    "persist": "rclone.conf",
+    "post_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
+        "    if (Test-Path $_.FullName) {",
+        "        New-Item -Path (Join-Path $dir $_.Name) -Value $_ -ItemType HardLink -Force",
+        "    }",
+        "}"
+    ],
     "checkver": {
         "github": "https://github.com/rclone/rclone"
     },

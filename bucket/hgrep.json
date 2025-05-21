@@ -1,8 +1,8 @@
 {
-    "homepage": "https://github.com/rhysd/hgrep",
-    "description": "Grep with human-friendly search results",
-    "license": "MIT",
     "version": "0.3.8",
+    "description": "Grep with human-friendly search results",
+    "homepage": "https://github.com/rhysd/hgrep",
+    "license": "MIT",
     "url": "https://github.com/rhysd/hgrep/releases/download/v0.3.8/hgrep-v0.3.8-x86_64-pc-windows-msvc.zip",
     "hash": "",
     "extract_dir": "hgrep-v0.3.8-x86_64-pc-windows-msvc",

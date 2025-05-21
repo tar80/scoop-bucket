@@ -1,7 +1,7 @@
 {
-    "version": "5.9.0",
-    "description": "The Fastest copy/backup software.",
     "homepage": "https://fastcopy.jp/",
+    "description": "The Fastest copy/backup software.",
+    "version": "5.9.0",
     "license": {
         "identifier": "Freeware",
         "url": "https://fastcopy.jp/help/fastcopy_eng.htm#license"
