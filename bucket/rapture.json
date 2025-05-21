@@ -9,6 +9,14 @@
     "persist": [
         "rapture.ini"
     ],
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
+        "    if (Test-Path $_.FullName) {",
+        "        New-Item -Path (Join-Path \"$dir\" \"$_.Name\") -Value $_.FullName -ItemType HardLink -Force",
+        "    }",
+        "}"
+    ],
     "shortcuts": [
         [
             "rapture.exe",
