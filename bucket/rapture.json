@@ -14,12 +14,6 @@
         "    }",
         "}"
     ],
-    "shortcuts": [
-        [
-            "rapture.exe",
-            "Onigiri"
-        ]
-    ],
     "checkver": {
         "url": "https://www.vector.co.jp/soft/dl/win95/art/se386376.html",
         "regex": "<span class=\"version\">([^<]+)</span>"
