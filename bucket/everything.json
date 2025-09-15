@@ -18,7 +18,7 @@
         "if (!(Test-Path \"$persist_dir\\Everything.ini\")) { Invoke-ExternalCommand \"$dir\\Everything.exe\" -Args @('-install-config null') | Out-Null }",
         "Get-ChildItem \"$persist_dir\\*\" | ForEach-Object {",
         "    if (Test-Path $_.FullName) {",
-        "        New-Item -Path (Join-Path \"$dir\" \"$_.Name\") -Value $_.FullName -ItemType HardLink -Force",
+        "        New-Item -Path (Join-Path $dir $_.Name) -Value $_.FullName -ItemType HardLink -Force",
         "    }",
         "}"
     ],
