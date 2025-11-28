@@ -19,12 +19,6 @@
         "keepassxc-cli.exe",
         "keepassxc-proxy.exe"
     ],
-    "shortcuts": [
-        [
-            "KeePassXC.exe",
-            "KeePassXC"
-        ]
-    ],
     "persist": "config",
     "checkver": {
         "github": "https://github.com/keepassxreboot/keepassxc"
