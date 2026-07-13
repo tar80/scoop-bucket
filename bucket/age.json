@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-windows-amd64.zip",
-            "hash": "c56e8ce22f7e80cb85ad946cc82d198767b056366201d3e1a2b93d865be38154"
+            "hash": "80adcf55848b46f8eb006ff4f73c5b840e7e322529d5d4e534be235ff0bb4ad0"
         }
     },
     "extract_dir": "age",

@@ -4,9 +4,6 @@
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
     "notes": "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types.",
-    "suggest": {
-        "yt-dlp": "yt-dlp"
-    },
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/mpv-player-windows/release/mpv-0.41.0-x86_64.7z",
